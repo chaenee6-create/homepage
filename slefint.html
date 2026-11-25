@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>민채원의 간호학 프로필</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #72F2C3;
+    color: #173D34;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: #F5FFFA;
+    padding: 40px;
+    border: 3px solid #173D34;
+}
+
+/* 상단 프로필 */
+
+header {
+    background-color: #00BA84;
+    padding: 45px 30px;
+    text-align: center;
+    border: 2px solid #173D34;
+    position: relative;
+}
+
+header h1 {
+    font-size: 45px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #E9FFF6;
+    font-size: 17px;
+}
+
+.profile-img {
+    width: 210px;
+    height: auto;
+    margin: 25px auto 10px;
+    display: block;
+}
+
+/* 공통 섹션 */
+
+section {
+    margin-top: 40px;
+    padding: 30px;
+    border: 2px solid #173D34;
+    background-color: white;
+}
+
+h2 {
+    color: #009B70;
+    font-size: 27px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #72F2C3;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #087C60;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 15px;
+}
+
+/* 자기소개 */
+
+.about {
+    background-color: #E5FFF3;
+}
+
+.profile-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.info-box {
+    background-color: white;
+    border: 1px solid #00BA84;
+    padding: 15px;
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+}
+
+/* 관심 분야 */
+
+.interest-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.interest-box {
+    background-color: #E5FFF3;
+    padding: 20px;
+    border-left: 5px solid #00BA84;
+}
+
+.interest-box h3 {
+    font-size: 18px;
+}
+
+/* 강점 */
+
+.strength-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.strength-box {
+    flex: 1;
+    min-width: 200px;
+    background-color: #D5FFEC;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #00BA84;
+}
+
+.strength-box .emoji {
+    font-size: 35px;
+}
+
+/* 활동 */
+
+.activity {
+    background-color: #F0FFF8;
+}
+
+.activity li {
+    margin: 12px 0 12px 25px;
+    padding-left: 5px;
+}
+
+/* 취미 */
+
+.hobby-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hobby-box {
+    flex: 1;
+    min-width: 180px;
+    background-color: #FFF0F4;
+    padding: 20px;
+    text-align: center;
+}
+
+.hobby-box:nth-child(2) {
+    background-color: #E5FFF3;
+}
+
+.hobby-box:nth-child(3) {
+    background-color: #FFF8DC;
+}
+
+/* 캐릭터 이미지 */
+
+.character-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.character-area img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+/* 목표 */
+
+.goal {
+    background-color: #173D34;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.goal h2 {
+    color: #72F2C3;
+    border-bottom: 2px solid #72F2C3;
+}
+
+.goal p {
+    line-height: 2.2;
+}
+
+/* 하단 */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+    background-color: #00BA84;
+    color: white;
+    font-size: 13px;
+}
+
+/* 모바일 화면 */
+
+@media screen and (max-width: 650px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .interest-list {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .character-area img {
+        width: 130px;
+        height: 130px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- PROFILE -->
+
+<header>
+    <p>WELCOME TO MY PROFILE ♡</p>
+    <h1>안녕하세요! 민채원입니다.</h1>
+    <p>사람을 먼저 생각하는 예비 간호사</p>
+
+    <img src="img2.png"
+         alt="간호사 캐릭터"
+         class="profile-img">
+
+    <p>단국대학교 간호학과 2학년</p>
+</header>
+
+
+<!-- ABOUT ME -->
+
+<section class="about">
+    <h2>♡ ABOUT ME</h2>
+
+    <p>
+        안녕하세요. 저는 단국대학교 간호학과 2학년에
+        재학 중인 민채원입니다.
+        사람들을 돕는 일에서 보람을 느끼며,
+        새로운 아이디어를 떠올리고 이를 실제로
+        실현하는 과정에 흥미를 가지고 있습니다.
+    </p>
+
+    <p>
+        특히 의료 취약계층의 의료 접근성과
+        디지털 헬스케어 분야에 관심이 많습니다.
+        간호학을 공부하면서 환자의 질병뿐 아니라
+        환자가 살아가는 환경과 일상까지 이해하는
+        간호사가 되고 싶다는 목표를 가지게 되었습니다.
+    </p>
+
+    <div class="profile-info">
+        <div class="info-box">
+            <h3>🏫 학교</h3>
+            단국대학교
+        </div>
+
+        <div class="info-box">
+            <h3>🩺 전공</h3>
+            간호학과
+        </div>
+
+        <div class="info-box">
+            <h3>📚 학년</h3>
+            2학년
+        </div>
+    </div>
+</section>
+
+
+<!-- INTERESTS -->
+
+<section>
+    <h2>♡ INTERESTS</h2>
+
+    <div class="interest-list">
+
+        <div class="interest-box">
+            <h3>🏥 의료 접근성</h3>
+            <p>
+                의료 취약계층이 겪는 의료 서비스 이용의
+                어려움을 줄이고 누구나 평등하게
+                의료 서비스를 이용할 수 있는 환경에 관심이 있습니다.
+            </p>
+        </div>
+
+        <div class="interest-box">
+            <h3>📱 디지털 헬스케어</h3>
+            <p>
+                AI와 디지털 기술을 활용하여
+                의료 서비스를 더욱 편리하고 효율적으로
+                개선할 수 있는 방법을 고민합니다.
+            </p>
+        </div>
+
+        <div class="interest-box">
+            <h3>💡 창의적인 문제 해결</h3>
+            <p>
+                일상 속 불편함을 발견하고
+                새로운 아이디어를 통해 해결하는
+                과정에 흥미를 가지고 있습니다.
+            </p>
+        </div>
+
+        <div class="interest-box">
+            <h3>🤝 사람 중심의 간호</h3>
+            <p>
+                질병뿐 아니라 환자의 감정과 생활환경,
+                개인의 특성을 함께 고려하는
+                따뜻한 간호에 관심이 있습니다.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- STRENGTHS -->
+
+<section>
+    <h2>♡ STRENGTHS</h2>
+
+    <div class="strength-list">
+
+        <div class="strength-box">
+            <div class="emoji">🌷</div>
+            <h3>책임감</h3>
+            <p>
+                맡은 역할에 최선을 다하고
+                끝까지 책임을 다하는 자세를
+                중요하게 생각합니다.
+            </p>
+        </div>
+
+        <div class="strength-box">
+            <div class="emoji">⭐</div>
+            <h3>리더십</h3>
+            <p>
+                팀원들과 적극적으로 소통하고
+                서로 협력할 수 있도록
+                이끄는 능력을 가지고 있습니다.
+            </p>
+        </div>
+
+        <div class="strength-box">
+            <div class="emoji">💚</div>
+            <h3>실행력</h3>
+            <p>
+                새로운 아이디어를 생각하는 것에서
+                그치지 않고 직접 도전하고
+                실천하는 것을 좋아합니다.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ACTIVITIES -->
+
+<section class="activity">
+    <h2>♡ MY ACTIVITIES</h2>
+
+    <h3>🩺 의료봉사단 교육팀장</h3>
+    <p>
+        의료봉사단에서 교육팀장으로 활동하며
+        팀원들과 함께 교육 활동을 기획하고
+        원활한 활동을 위해 소통하고 있습니다.
+    </p>
+
+    <br>
+
+    <h3>🤖 AI 서비스 공모전</h3>
+    <p>
+        장애인의 병원 이용 과정에서 발생하는
+        불편함을 줄이기 위한 AI 서비스 아이디어로
+        공모전에 도전하고 있습니다.
+    </p>
+</section>
+
+
+<!-- HOBBIES -->
+
+<section>
+    <h2>♡ HOBBIES</h2>
+
+    <div class="hobby-list">
+
+        <div class="hobby-box">
+            <h3>👗 패션과 스타일링</h3>
+            <p>
+                다양한 옷을 조합하고
+                나만의 스타일을 만들어 가는 것을
+                좋아합니다.
+            </p>
+        </div>
+
+        <div class="hobby-box">
+            <h3>🎧 음악 감상</h3>
+            <p>
+                다양한 나라의 음악을 듣고
+                애니메이션과 영화를 감상하는 것을
+                즐깁니다.
+            </p>
+        </div>
+
+        <div class="hobby-box">
+            <h3>🌏 외국어 학습</h3>
+            <p>
+                음악과 영상 콘텐츠를 통해
+                여러 나라의 언어와 문화를
+                알아가는 것을 좋아합니다.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="character-area">
+        <img src="img4.jpg" alt="간호사 캐릭터">
+        <img src="img3.png" alt="간호사 캐릭터">
+    </div>
+</section>
+
+
+<!-- MY GOAL -->
+
+<section class="goal">
+    <h2>♡ MY GOAL</h2>
+
+    <h3 style="color:#72F2C3;">
+        질병보다 사람을 먼저 바라보는 간호사
+    </h3>
+
+    <p>
+        제가 되고 싶은 간호사는 질병만을 바라보는
+        사람이 아니라, 질병을 가진 한 사람의 삶을
+        이해하고 공감하는 간호사입니다.
+        <br><br>
+
+        환자가 병원에 머무는 시간뿐 아니라
+        퇴원한 뒤 다시 일상으로 돌아가는 과정까지
+        함께 고민하고 싶습니다.
+        <br><br>
+
+        의료 취약계층을 향한 따뜻한 시선과
+        디지털 헬스케어에 대한 관심을 바탕으로
+        기술과 사람을 연결하는 간호사로 성장하겠습니다.
+    </p>
+
+    <br>
+    <h3 style="color:#72F2C3;">
+        CARE BEYOND THE HOSPITAL ♡
+    </h3>
+</section>
+
+
+<footer>
+    <p>MIN CHAEWON · 단국대학교 간호학과</p>
+    <p>사람을 위한 따뜻한 간호를 꿈꾸며 💚</p>
+</footer>
+
+</div>
+
+</body>
+</html>
